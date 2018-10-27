@@ -1,6 +1,6 @@
 branches:
   only:
-    - ci_tests
+    - /^ci_tests\/.+$/
     - /^stable\/.+$/
 
 build: false

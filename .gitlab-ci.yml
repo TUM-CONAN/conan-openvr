@@ -9,7 +9,7 @@ variables:
     script:
         - python build.py
     only:
-      - ci_tests
+      - /^ci_tests\/.+$/
       - /^stable\/.+$/
 
 gcc-4.9:
