@@ -1,0 +1,14 @@
+--- CMakeLists.txt	2018-10-27 17:46:07.697564600 +0200
++++ CMakeLists.txt	2018-10-27 17:47:53.974000000 +0200
+@@ -26,7 +26,10 @@
+ 
+ # Get platform.
+ if(WIN32)
+-	set(PLATFORM_NAME "win")
++  set(PLATFORM_NAME "win")
++  if(BUILD_SHARED)
++    add_definitions(-DVR_BUILD_SHARED)
++  endif()
+ elseif(UNIX AND NOT APPLE)
+   if(CMAKE_SYSTEM_NAME MATCHES ".*Linux")
+     set(PLATFORM_NAME "linux")

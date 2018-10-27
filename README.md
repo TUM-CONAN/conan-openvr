@@ -10,22 +10,24 @@
 The packages generated with this **conanfile** can be found in [bintray.com](https://bintray.com/arsen-studio/arsen-deps/openvr%3Aarsen-studio).
 
 ## Setup
-To configure Conan client to work with Arsen packages, you will need to add repository to the list of remotes. To add repository, use the following command: 
-```
-conan remote add arsen-deps https://api.bintray.com/conan/arsen-studio/arsen-deps 
+
+To configure Conan client to work with Arsen packages, you will need to add repository to the list of remotes. To add repository, use the following command:
+
+```sh
+conan remote add arsen-deps https://api.bintray.com/conan/arsen-studio/arsen-deps
 ```
 
 ### Basic
 
-```
-$ conan install openvr/latest@arsen-studio/stable
+```sh
+conan install openvr/latest@arsen-studio/stable
 ```
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
-```
+```ini
 [requires]
 openvr/latest@arsen-studio/stable
 
@@ -39,7 +41,7 @@ cmake
 
 Complete the installation of requirements for your project running:
 
-```
+```sh
 conan install .
 ```
 
@@ -49,23 +51,26 @@ Project setup installs the library (and all his dependencies) and generates the 
 
 ### Build packages
 
-    $ pip install conan_package_tools bincrafters_package_tools
-    $ python build.py
+```sh
+pip install conan_package_tools bincrafters_package_tools
+python build.py
+```
 
 ### Upload packages to server
 
-    $ conan upload openvr/latest@arsen-studio/stable --all
+```sh
+conan upload openvr/latest@arsen-studio/stable --all
+```
 
 ## Issues
 
 If you wish to report an issue, please do so here:
 
-https://gitlab.com/ArsenStudio/ArsenEngine/dependencies/conan-openvr/issues
+<https://gitlab.com/ArsenStudio/ArsenEngine/dependencies/conan-openvr/issues>
 
 For any pull or merge request, please do so here:
 
-https://gitlab.com/ArsenStudio/ArsenEngine/dependencies/conan-openvr/merge_requests
-
+<https://gitlab.com/ArsenStudio/ArsenEngine/dependencies/conan-openvr/merge_requests>
 
 ## License
 
