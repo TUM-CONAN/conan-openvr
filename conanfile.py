@@ -4,7 +4,7 @@ from conans import ConanFile, CMake, tools
 
 class OpenvrConan(ConanFile):
     name = "openvr"
-    version = "1.0.14"
+    version = "1.0.17"
     description = ("API and runtime that allows access to VR hardware from"
                    "applications have specific knowledge of the hardware they are targeting."
                    "multiple vendors without requiring that "

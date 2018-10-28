@@ -1,6 +1,6 @@
---- headers/openvr.h	Sat Oct 27 16:51:01 2018
-+++ headers/openvr.h	Sat Oct 27 16:51:46 2018
-@@ -1364,10 +1364,14 @@
+--- headers/openvr.h	Tue Oct 16 02:14:19 2018
++++ headers/openvr.h	Sun Oct 28 11:07:09 2018
+@@ -1535,10 +1535,14 @@
  // figure out how to import from the VR API dll
  #if defined(_WIN32)
  
