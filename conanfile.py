@@ -38,11 +38,6 @@ class OpenvrConan(ConanFile):
            include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
            conan_basic_setup()''')
 
-        # https://github.com/ValveSoftware/openvr/issues/364
-        # https://github.com/ValveSoftware/openvr/pull/483
-        if self.settings.compiler == "Visual Studio":
-            tools.patch(base_path="openvr", patch_file="patch/openvr.h.patch")
-            tools.patch(base_path="openvr", patch_file="patch/CMakeLists.txt.patch")
 
     def _configure_cmake(self):
         cmake = CMake(self)
