@@ -4,13 +4,13 @@ from conans import ConanFile, CMake, tools
 
 class OpenvrConan(ConanFile):
     name = "openvr"
-    version = "1.0.17"
+    version = "1.4.18"
     description = ("API and runtime that allows access to VR hardware from"
                    "applications have specific knowledge of the hardware they are targeting."
                    "multiple vendors without requiring that "
                    "applications have specific knowledge of the hardware they"
                    "are targeting.")
-    url = "https://gitlab.com/ArsenStudio/ArsenEngine/dependencies/conan-{0}".format(name)
+    url = "https://github.com/ulricheck/conan-{0}".format(name)
     homepage = "https://github.com/ValveSoftware/openvr"
 
     license = "BSD 3-Clause"
